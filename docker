@@ -1,0 +1,12 @@
+FROM ubuntu:latest
+MAINTAINER Richard Foitik
+
+RUN sudo apt-get -y update
+RUN sudo apt-get -y install python
+RUN sudo apt-get -y install libnetcdf-dev
+RUN sudo apt-get -y install netcdf-bin
+RUN sudo pip install -U pip
+RUN sudo pip install h5py
+RUN sudo pip install plotly
+RUN sudo pip install netCDF4
+ADD https://pods.iplantcollaborative.org/wiki/download/attachments/28119417/hw7.py
