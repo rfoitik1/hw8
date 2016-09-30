@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Richard FOitik
+MAINTAINER Richard FOitik <rfoitik1@email.arizona.edu>
 ENV PATH /usr/local/bin:$PATH
 RUN apt-get update && apt-get install -y --no-install-recommends
 RUN apt-get install -y python
