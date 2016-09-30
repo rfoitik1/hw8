@@ -4,6 +4,7 @@ ENV PATH /usr/local/bin:$PATH
 RUN apt-get update && apt-get install -y --no-install-recommends
 RUN apt-get install -y python
 RUN apt-get install -y libnetcdf-dev
+RUN apt-get -y install libhdf5-serial-dev
 RUN apt-get install -y python-dev python-distribute python-pip
 RUN pip install --upgrade pip
 RUN pip install netcdf4
